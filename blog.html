@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Парус - Блог</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<header class="header header--style-shadow">
+    <div class="container">
+        <div class="header__row row align-items-center flex-nowrap">
+            <div class="col-lg-2">
+                <a href="/" class="header__logotype">
+                    <img src="img/logotype.png" alt="Логотип Парус">
+                </a>
+            </div>
+            <div class="col d-none d-lg-block">
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Информация о центре</a></li>
+                        <li><a href="#">Стоимость лечения</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Лицензии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-auto flex-shrink-1 d-none d-lg-block">
+                <div class="header__phone">
+                    <span class="sm">бесплатно и анонимно</span>
+                    <a href="tel:8-800-600-06-02">8 800 600 06 02</a>
+                </div>
+            </div>
+            <div class="col-auto d-lg-none ml-auto">
+                <button id="header-toggle-call" class="btn btn--style-icon" type="button">
+                    <svg class="icon">
+                        <use xlink:href="/sprite.svg#menu"></use>
+                    </svg>
+                    <svg class="icon on-active">
+                        <use xlink:href="/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header__menu d-none d-lg-flex">
+            <nav>
+                <ul>
+                    <li class="is-dropdown">
+                        <a href="#">Наркомания</a>
+                        <ul>
+                            <li><a href="#">Признаки</a></li>
+                            <li><a href="#">Алкоголизм</a></li>
+                            <li><a href="#">Причины</a></li>
+                            <li><a href="#">Последствия</a></li>
+                            <li><a href="#">Стадии</a></li>
+                            <li class="has-child">
+                                <a href="#">Лечение</a>
+                                <ul>
+                                    <li><a href="#">УБОД</a></li>
+                                    <li><a href="#">Реабилитация</a></li>
+                                    <li><a href="#">Детоксикация</a></li>
+                                    <li><a href="#">Кодирование</a></li>
+                                    <li><a href="#">Нарколог на дом</a></li>
+                                    <li><a href="#">Капельница</a></li>
+                                    <li><a href="#">Принудительное</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Программа</a></li>
+                            <li class="has-child">
+                                <a href="#">Виды наркотиков</a>
+                                <ul>
+                                    <li><a href="#">УБОД</a></li>
+                                    <li><a href="#">Реабилитация</a></li>
+                                    <li><a href="#">Детоксикация</a></li>
+                                    <li><a href="#">Кодирование</a></li>
+                                    <li><a href="#">Нарколог на дом</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Алкоголизм</a></li>
+                    <li><a href="#">Игромания</a></li>
+                    <li><a href="#">Родственникам</a></li>
+                    <li><a href="#">Сроки и гарантии</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header__help link">
+                <svg class="icon icon--size-sm">
+                    <use xlink:href="/sprite.svg#phone"></use>
+                </svg>
+                Мне нужна помощь</a>
+        </div>
+    </div>
+
+    <div class="header__toggle d-lg-none">
+        <div>
+            <div class="header__menu">
+                <nav>
+                    <ul>
+                        <li class="is-dropdown">
+                            <a href="#">Наркомания</a>
+                            <ul>
+                                <li><a href="#">Признаки</a></li>
+                                <li><a href="#">Алкоголизм</a></li>
+                                <li><a href="#">Причины</a></li>
+                                <li><a href="#">Последствия</a></li>
+                                <li><a href="#">Стадии</a></li>
+                                <li class="has-child">
+                                    <a href="#">Лечение</a>
+                                    <ul>
+                                        <li><a href="#">УБОД</a></li>
+                                        <li><a href="#">Реабилитация</a></li>
+                                        <li><a href="#">Детоксикация</a></li>
+                                        <li><a href="#">Кодирование</a></li>
+                                        <li><a href="#">Нарколог на дом</a></li>
+                                        <li><a href="#">Капельница</a></li>
+                                        <li><a href="#">Принудительное</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Программа</a></li>
+                                <li class="has-child">
+                                    <a href="#">Виды наркотиков</a>
+                                    <ul>
+                                        <li><a href="#">УБОД</a></li>
+                                        <li><a href="#">Реабилитация</a></li>
+                                        <li><a href="#">Детоксикация</a></li>
+                                        <li><a href="#">Кодирование</a></li>
+                                        <li><a href="#">Нарколог на дом</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Алкоголизм</a></li>
+                        <li><a href="#">Игромания</a></li>
+                        <li><a href="#">Родственникам</a></li>
+                        <li><a href="#">Сроки и гарантии</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Информация о центре</a></li>
+                    <li><a href="#">Стоимость лечения</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Лицензии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__phone">
+                <span class="sm">бесплатно и анонимно</span>
+                <a href="tel:8-800-600-06-02">8 800 600 06 02</a>
+            </div>
+            <a href="#" class="btn btn--style-primary">Записаться на прием</a>
+        </div>
+    </div>
+</header>
+
+<section class="breadcrumbs">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Родственникам</a></li>
+                <li>Лекции</li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<main class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="content__raw">
+                    <h1><span>Лекции</span> для зависимых</h1>
+                    <p class="lg">Лекции на тему зависимости и созависимости необходимы для изучения и понимания
+                        проблемы.</p>
+                    <p>Лекционный материал будет полезен зависимым и их родным в изучении зависимости, а именно: истоки
+                        формирования, причины, признаки и оказание помощи. Лекции применяются в программе реабилитации и
+                        эффективны в лечении зависимых. В данной подборке вы найдете полезную информацию не только на
+                        тему зависимости, но и на проблему созависимости.</p>
+                </div>
+
+                <aside class="sidebar d-lg-none">
+                    <div class="sidebar__menu">
+                        <h4>Родственникам</h4>
+                        <nav>
+                            <ul>
+                                <li class="is-active"><a href="#">Лекции</a></li>
+                                <li><a href="#">Тренинг</a></li>
+                                <li><a href="#">Полезные статьи</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+
+                <section class="section news">
+                    <div class="news__grid">
+                        <div class="block">
+                            <div class="block__poster">
+                                <a href="#"><img src="img/service-2.png" alt="Ипостаси созависимости картинка"></a>
+
+                                <div class="block__tags">
+                                    <a href="#">Лекция</a>
+                                </div>
+                            </div>
+                            <a href="#" class="h3">Ипостаси созависимости</a>
+                            <p>Существует несколько типичных моделей созависимого поведения, которые начинают
+                                формироваться еще в детстве</p>
+                        </div>
+                        <div class="block">
+                            <div class="block__poster">
+                                <a href="#"><img src="img/service-2.png"
+                                                 alt="Взаимоотношения с социумом химически зависимых людей картинка"></a>
+
+                                <div class="block__tags">
+                                    <a href="#">Лекция</a>
+                                </div>
+                            </div>
+                            <a href="#" class="h3">Взаимоотношения с социумом химически зависимых людей</a>
+                            <p>Как выстраивают зависимые люди отношения с социумом во время употребления и в ходе
+                                выздоровления.</p>
+                        </div>
+                        <div class="block">
+                            <div class="block__poster">
+                                <a href="#"><img src="img/service-2.png" alt="Источники злости и агрессии картинка"></a>
+
+                                <div class="block__tags">
+                                    <a href="#">Лекция</a>
+                                </div>
+                            </div>
+                            <a href="#" class="h3">Источники злости и агрессии</a>
+                            <p>Факторы, влияющие на возникновение раздражения и агрессивного поведения у зависимых
+                                людей.</p>
+                        </div>
+                        <div class="block">
+                            <div class="block__poster">
+                                <a href="#"><img src="img/service-2.png"
+                                                 alt="Формирование созависимости в семье зависимых картинка"></a>
+
+                                <div class="block__tags">
+                                    <a href="#">Лекция</a>
+                                </div>
+                            </div>
+                            <a href="#" class="h3">Формирование созависимости в семье зависимых</a>
+                            <p>О возникновении и признаках созависимости в семье. О влиянии созависимости на зависимых
+                                людей.</p>
+                        </div>
+                    </div>
+                    <div class="section__footer">
+                        <a href="#" class="btn btn--style-outline">Показать еще 10 статей</a>
+                    </div>
+                </section>
+            </div>
+            <div class="col offset-xl-1">
+                <aside class="sidebar">
+                    <div class="sidebar__menu d-none d-lg-block">
+                        <h4>Родственникам</h4>
+                        <nav>
+                            <ul>
+                                <li class="is-active"><a href="#">Лекции</a></li>
+                                <li><a href="#">Тренинг</a></li>
+                                <li><a href="#">Полезные статьи</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="block">
+                        <div class="block__photo">
+                            <img src="img/team-4.png" alt="Юрий Сергеевич Питаев фото">
+                        </div>
+                        <div>
+                            <h4>Готовы сделать шаг настречу новой жизни?</h4>
+                            <p>Просто оставьте заявку</p>
+                            <div class="block__form">
+                                <input type="tel" placeholder="Ваш номер телефона">
+                                <button class="btn btn--style-primary" type="submit">Получить помощь</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block__map">
+                            <img src="img/svg/russia.svg" alt="Карта России">
+                        </div>
+                        <h4>В мире ежедневно умирает от зависимости 8 500 человек*</h4>
+                        <div class="block__captions">
+                            <div>
+                                <h4>1 750 864</h4>
+                                <span class="sm bold">В России страдают от зависимостей</span>
+                            </div>
+                            <div>
+                                <h4>10 864</h4>
+                                <span class="sm bold">Погибло только в Москве и области за 2019</span>
+                            </div>
+                            <div>
+                                <h4>167 970</h4>
+                                <span class="sm bold">Преступлений в России совершено за 2019 в нетрезвом состоянии</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="section action">
+    <div class="container">
+        <div class="action__block">
+            <div class="action__photo">
+                <img src="img/team-1.png" alt="Светлана Владимировна Денденкова фото">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Поговорите с клиническим психологом <span>бесплатно</span></h2>
+                    <p>Не стоит медлить. Каждая минута на счету!</p>
+                    <div class="row mt-4 mt-sm-5">
+                        <div class="col-sm-6">
+                            <input type="tel" placeholder="Ваш номер телефона">
+                        </div>
+                        <div class="col-sm-auto mt-3 mt-sm-0">
+                            <button class="btn btn--style-primary" type="submit">Получить помощь</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 align-self-center offset-2 d-none d-lg-block">
+                    <h4>Светлана Владимировна Денденкова</h4>
+                    <span class="sm bold">Клинический психолог</span>
+                    <p>Опыт работы с зависимыми — <br>10 лет</p>
+                    <a class="action__phone h2" href="tel:8-800-600-06-02">8 800 600 06 02</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__contact">
+                <span class="sm bold">круглосуточная горячая линия</span>
+                <a class="h3" href="tel:8-800-600-06-02">8 800 600 06 02</a>
+            </div>
+            <div class="footer__contact">
+                <span class="sm bold">центральный офис:</span>
+                <span class="h3">Москва, ул.Люблинская, д. 36</span>
+            </div>
+            <div class="footer__socials">
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="/sprite.svg#twitter"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon">
+                        <use xlink:href="/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="btn btn--style-primary">Получить помощь</a>
+        </div>
+        <nav class="footer__menu d-none d-lg-block">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="footer__title">Лечение наркомании</a>
+                    <div class="footer__columns">
+                        <a href="#">Признаки</a>
+                        <a href="#">Причины</a>
+                        <a href="#">Последствия</a>
+                        <a href="#">Стадии</a>
+                        <a href="#">Виды наркотиков</a>
+                        <a href="#">Лечение</a>
+                        <a href="#">Программа</a>
+                        <a href="#">Вред</a>
+                        <a href="#">Тест</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="footer__title">Лечение алкоголизма</a>
+                    <div class="footer__columns">
+                        <a href="#">Анонимное кодирование</a>
+                        <a href="#">Вшивание препарата «Торпедо»</a>
+                        <a href="#">Лечение алкоголизма гипнозом</a>
+                        <a href="#">Лазерное кодирование от алкоголизма</a>
+                        <a href="#">Кодирование от алкоголизма по методу Довженко</a>
+                        <a href="#">Кодирование от алкоголизма по методу Довженко</a>
+                    </div>
+                </div>
+                <div class="col-4 offset-1">
+                    <div class="footer__columns">
+                        <a href="#" class="footer__title">Игромания</a>
+                        <a href="#" class="footer__title">Сроки и гарантии</a>
+                        <a href="#" class="footer__title">Родственникам</a>
+                        <a href="#" class="footer__title">Информация о центре</a>
+                        <a href="#" class="footer__title">Стоимость лечения</a>
+                        <a href="#" class="footer__title">Блог</a>
+                        <a href="#" class="footer__title">Лицензии</a>
+                        <a href="#" class="footer__title">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="footer__copyrights">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <p class="sm">© 2020 частная наркологическая клиника: Анонимно, Круглосуточно.<br>Информация,
+                        размещенная на сайте, является справочной. Необходима консультация специалиста.</p>
+                </div>
+                <div class="col-auto">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/common.min.js"></script>
+</body>
+</html>
